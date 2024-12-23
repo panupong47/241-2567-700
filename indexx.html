@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*ส่วนนนี้คือ CSS */
+        /*ใช้สำหรับแต่ง (id class) */
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf');
+        }
+
+        body {
+            font-family: 'Kanit';
+        }
+
+        .container {
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header-from {
+            width: 200px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .form-input {
+            margin-bottom: 10px;
+        }
+
+        input.fprm,
+        texterer {
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .center {
+            text-align: center;
+        }
+        .button{
+            border: 2;
+            width: 100%;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- from-->
+    <div class="container">
+        <div class="header">
+            Register form
+        </div>
+        <div class="flex form-input">
+            <div class="header-from">ชื่อ</div>
+            <input class="from" type="text">
+        </div>
+        <div class="flex form-input">
+            <div class="header-from">นามสกุล</div>
+            <input class="from" type="text">
+        </div>
+        <div class="flex form-input">
+            <div class="header-from">อายุ</div>
+            <input class="from" type="number" min="0" max="100">
+        </div>
+        <div class="flex gender form-input">
+            <div class="header-from">เพศ</div>
+            <div>
+                <input name="gender" type="radio">ชาย
+                <input name="gender" type="radio">หญิง
+                <input name="gender" type="radio">อื่นๆ
+            </div>
+        </div>
+        <div calss="form-input">
+            งานอดิเรก
+            <div>
+                <input name="interrest" type="checkbox">อ่านหนังสือ
+            </div>
+            <div>
+                <input name="interrest" type="checkbox">ดูหนัง
+                <div>
+                    <input name="interrest" type="checkbox">ฟังเพลง
+                </div>
+                <div calss="form-input">
+                    คำอธิบาย
+                    <textarea></textarea>
+                </div>
+                <div class="center">
+                    <button class="button">ส่งข้อมูล</button>
+                </div>
+
+</body>
+
+</html>
