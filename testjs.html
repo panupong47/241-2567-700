@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Helloword</div>
+    ชื่อ<input 
+        id = "first name"
+        class="input"
+        type="text" 
+        name="first name" 
+        value="Joness">
+    นามสกุล<input 
+        id = "lase name"
+        class="input"
+        type="text" 
+        name="first name" 
+        value="Doe">
+    <script>
+        let firstnameDOM = document.querySelector('input[name="first name"]'); // ดึง element ที่มี name ชื่อ first name
+        console.log(firstnameDOM.value);
+        
+        
+        /*
+        let firstnameDOM = document.querySelector('#first name'); // ดึง element ที่มี id ชื่อ first name
+        console.log(firstnameDOM.value);
+        */
+        /*
+        let inputsDOM = document.getElementsByClassName('input');// ดึง element ที่มี class ชื่อ input ทั้งหมด
+        console.log(inputsDOM);
+        for (let i = 0; i < inputsDOM.length; i++) { // วนลูปเพื่อดึงค่าของ input ทั้งหมด
+            console.log(inputsDOM[i].value);
+        }*/
+    </script>
+</body>
+</html>
